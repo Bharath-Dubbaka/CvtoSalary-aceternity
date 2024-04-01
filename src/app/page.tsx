@@ -43,6 +43,9 @@ export default function Home() {
       <div style={{position: "relative", bottom:"12rem", padding:"0 9rem 0 9rem", opacity:"0.5"}}>
         <TextGenerateEffect words={words} />
       </div> 
+      <div style={{fontSize:"3rem", display:"flex", justifyContent:"center"}}>
+        OUR MAIN SERVICES :
+      </div>
       <div className="max-w-5xl mx-auto px-8">
         <HoverEffect items={projects} />
       </div>
