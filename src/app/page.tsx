@@ -12,9 +12,11 @@ import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 // import { Navbar } from "./components/ui/navbar";
 import { EvervaultCard, Icon } from "./components/ui/evervault-card";
 import { relative } from "path";
+import { HoverEffect } from "./components/ui/card-hover-effect";
 
 export default function Home() {
-  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows`
+  const words = `Transform your resume into a powerful tool that opens doors to opportunities. Trust our experienced resume writers to showcase your strengths and maximize your chances of success.
+  `
   return (
     <div>
       <div className="relative w-full flex items-center justify-center">
@@ -38,14 +40,12 @@ export default function Home() {
         </motion.h1>
         </LampContainer>
       </div>
-      <div style={{position: "relative", bottom:"8rem", padding:"0 9rem 0 9rem", opacity:"0.5"}}>
-        <TextGenerateEffect words={words} />
-        <TextGenerateEffect words={words} />
-        <TextGenerateEffect words={words} />
-        <TextGenerateEffect words={words} />
-        <TextGenerateEffect words={words} />
+      <div style={{position: "relative", bottom:"12rem", padding:"0 9rem 0 9rem", opacity:"0.5"}}>
         <TextGenerateEffect words={words} />
       </div> 
+      <div className="max-w-5xl mx-auto px-8">
+        <HoverEffect items={projects} />
+      </div>
       {/* //EvervaultCard CODE */}
       {/* <div className="flex flex-col items-start max-w-med mx-auto relative h-[30rem]"> */}
       {/* <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -127,3 +127,43 @@ function Navbar({ className }: { className?: string }) {
     </div>
   );
 }
+
+
+export const projects = [
+  {
+    title: "Stripe",
+    description:
+      "A technology company that builds economic infrastructure for the internet.",
+    link: "https://stripe.com",
+  },
+  {
+    title: "Netflix",
+    description:
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+    link: "https://netflix.com",
+  },
+  {
+    title: "Google",
+    description:
+      "A multinational technology company that specializes in Internet-related services and products.",
+    link: "https://google.com",
+  },
+  {
+    title: "Meta",
+    description:
+      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+    link: "https://meta.com",
+  },
+  {
+    title: "Amazon",
+    description:
+      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+    link: "https://amazon.com",
+  },
+  {
+    title: "Microsoft",
+    description:
+      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+    link: "https://microsoft.com",
+  },
+];
