@@ -40,7 +40,7 @@ export default function Home() {
         </motion.h1>
         </LampContainer>
       </div>
-      <div style={{position: "relative", bottom:"12rem", padding:"0 9rem 0 9rem", opacity:"0.5"}}>
+      <div style={{position: "relative", bottom:"14rem", padding:"0 9rem 0 9rem", opacity:"0.5", textAlign:"center"}}>
         <TextGenerateEffect words={words} />
       </div> 
       <div style={{fontSize:"3rem", display:"flex", justifyContent:"center"}}>
