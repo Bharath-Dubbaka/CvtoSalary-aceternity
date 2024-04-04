@@ -2,7 +2,6 @@
 // pages/_app.js
 
 import Image from "next/image";
-import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./components/ui/navbar-menu";
 import { cn } from "../../utils/cn";
 import "./globals.css";
@@ -13,6 +12,9 @@ import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 import { EvervaultCard, Icon } from "./components/ui/evervault-card";
 import { relative } from "path";
 import { HoverEffect } from "./components/ui/card-hover-effect";
+import {useState } from "react";
+import { useEffect } from "react";
+import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
 
 export default function Home() {
   const words = `Transform your resume into a powerful tool that opens doors to opportunities. Trust our experienced resume writers to showcase your strengths and maximize your chances of success.
@@ -48,6 +50,13 @@ export default function Home() {
       </div>
       <div className="max-w-5xl mx-auto px-8">
         <HoverEffect items={projects} />
+      </div>
+      <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+          />
       </div>
       {/* //EvervaultCard CODE */}
       {/* <div className="flex flex-col items-start max-w-med mx-auto relative h-[30rem]"> */}
@@ -137,36 +146,69 @@ export const projects = [
     title: "Professional Resume writing",
     description:
       "Boost your job prospects with resumes tailored to stand out in a competitive market, Tailored resumes that captivate employers, highlighting your skills and experience for maximum impact.",
-    link: "#",
+    link: "#1",
   },
   {
     title: "LinkedIn profile",
     description:
       "Enhance your profile's visibility by 70%, attracting more recruiters and opportunities, Optimized LinkedIn profiles that showcase your professional brand and attract opportunities.",
-    link: "#",
+    link: "#2",
   },
   {
     title: "Cover Letter",
     description:
       "Compelling cover letters that complement your resume, emphasizing your suitability for the role, expertly crafted to highlight your strengths and aspirations, ensuring you stand out to potential employers.",
-    link: "#",
+    link: "#3",
   },
   {
     title: "ATS Proof",
     description:
       "Ensure your application bypasses ATS filters with 99% compatibility assurance, Ensuring your documents are ATS (Applicant Tracking System) compatible, maximizing your chances of getting noticed.",
-    link: "#",
+    link: "#4",
   },
   {
     title: "SOP's",
     description:
       "Increase your acceptance odds with SOPs that resonate, achieving a 90% success rate as per stats, Expertly crafted Statements of Purpose (SOPs) that eloquently convey your aspirations and achievements.",
-    link: "#",
+    link: "#5",
   },
   {
     title: "Career Coaching",
     description:
       "Personalized guidance to navigate career challenges and unlock your full potential, Unlock your full potential and accelerate your career with personalized coaching sessions tailored to your unique goals and aspirations.",
-    link: "#",
+    link: "#6",
+  },
+];
+
+
+const testimonials = [
+  {
+    quote:
+      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+    name: "Charles Dickens",
+    title: "A Tale of Two Cities",
+  },
+  {
+    quote:
+      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+    name: "William Shakespeare",
+    title: "Hamlet",
+  },
+  {
+    quote: "All that we see or seem is but a dream within a dream.",
+    name: "Edgar Allan Poe",
+    title: "A Dream Within a Dream",
+  },
+  {
+    quote:
+      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+    name: "Jane Austen",
+    title: "Pride and Prejudice",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
   },
 ];
