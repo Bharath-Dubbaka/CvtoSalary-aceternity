@@ -1,6 +1,7 @@
 "use client";
 // pages/_app.js
 import Image from "next/image";
+import Link from "next/link";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./components/ui/navbar-menu";
 import { cn } from "../../utils/cn";
 import "./globals.css";
@@ -15,7 +16,7 @@ import {useState } from "react";
 import { useEffect } from "react";
 import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
 import { BackgroundGradient } from "./components/ui/background-gradient";
-import { IconAppWindow } from "@tabler/icons-react";
+
 
 
 export default function Home() {
@@ -194,6 +195,16 @@ export default function Home() {
           speed="slow"
           />
       </div>
+
+      <footer className="bg-slate-800 text-white py-4">
+      <div className="container mx-auto flex items-center justify-between">
+        <div className="text-sm">
+          <Link href="/termsandconditions" className="text-gray-300 mr-4">Terms & Conditions</Link>
+          <a href="#" className="text-gray-300 mr-4">Privacy Policy</a>
+          <a href="#" className="text-gray-300">Copyright@CVtoSalary2024</a>
+        </div>
+      </div>
+    </footer>
 
       {/* //EvervaultCard CODE */}
       {/* <div className="flex flex-col items-start max-w-med mx-auto relative h-[30rem]"> */}
