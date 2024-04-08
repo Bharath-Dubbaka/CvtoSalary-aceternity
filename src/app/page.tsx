@@ -200,7 +200,7 @@ export default function Home() {
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-sm">
           <Link href="/termsandconditions" className="text-gray-300 mr-4">Terms & Conditions</Link>
-          <a href="#" className="text-gray-300 mr-4">Privacy Policy</a>
+          <Link href="/privacypolicy" className="text-gray-300 mr-4">Privacy Policy</Link>
           <a href="#" className="text-gray-300">Copyright@CVtoSalary2024</a>
         </div>
       </div>
@@ -275,12 +275,12 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
         <span></span>
         <span></span>
-        <MenuItem setActive={setActive} active={active} item="FAQ">
+        <MenuItem setActive={setActive} active={active} item="More">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/termsandconditions">T&C</HoveredLink>
+            <HoveredLink href="/individual">Privacy policy</HoveredLink>
+            <HoveredLink href="/team">Why us ?</HoveredLink>
+            <HoveredLink href="/enterprise">FAQ</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
