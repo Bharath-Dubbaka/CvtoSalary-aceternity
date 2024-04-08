@@ -278,9 +278,9 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="More">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/termsandconditions">T&C</HoveredLink>
-            <HoveredLink href="/individual">Privacy policy</HoveredLink>
-            <HoveredLink href="/team">Why us ?</HoveredLink>
-            <HoveredLink href="/enterprise">FAQ</HoveredLink>
+            <HoveredLink href="/privacypolicy">Privacy policy</HoveredLink>
+            <HoveredLink href="/about">Why us ?</HoveredLink>
+            <HoveredLink href="/faqs">FAQ</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
