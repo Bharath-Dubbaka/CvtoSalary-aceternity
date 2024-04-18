@@ -40,9 +40,6 @@ export default function PrivacyPolicy (){
 
                     <div style={{paddingTop:"2rem"}}>TERM OF USE:</div>
                     <div>You hereby agree and promise not to use the services for any purpose that is restricted /unlawful or prohibited by these terms of use, By way of example, and not as a limitation, you agree not to use the Services:</div>
-                    <div>1. To annoy, intimidate, abuse, impersonate, wrong comment on other user of www.bookyourcv.com</div>
-                    <div>2. To transmit or post, or cause to be posted or transmitted, any content that is infringing, libellous, pornographic or otherwise violates any law or right of any third party, or corporate/firm or any other body of legal entity. Our two years free support will be only for new content modification arising out of new employment or new role. Already approved content cant be changed once Cv is closed or finally approved. You can come once in a quarter for these updations</div>
-                    <div>3. for any illegal purpose of any country/continent.</div>
 
                     <div>TERM OF AGREEMENT/SERVICE:</div>
                     <div>This Agreement shall remain in force so long as you are using our services. BookYourCv.com provides the online platform where users can select the services and place orders for services selected on the site subject to t&C set forth above and below. Either you or www.bookyourcv.com may terminate the service/services at any time, with or without cause. Bookyourcv.com reserves the right, in its sole discretion, to terminate your access to the website services and the related services or any portion thereof at any time, without any notice/notices to anybody/Individual/Corporate/Agent/Firm or any other legal entity.</div>
