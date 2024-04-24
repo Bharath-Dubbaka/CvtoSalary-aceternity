@@ -279,7 +279,7 @@ function Navbar({ className }: { className?: string }) {
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/termsandconditions">T&C</HoveredLink>
             <HoveredLink href="/privacypolicy">Privacy policy</HoveredLink>
-            <HoveredLink href="/about">Why us ?</HoveredLink>
+            <HoveredLink href="/whyus">Why us ?</HoveredLink>
             <HoveredLink href="/faqs">FAQ</HoveredLink>
           </div>
         </MenuItem>
