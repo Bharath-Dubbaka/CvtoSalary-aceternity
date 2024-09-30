@@ -27,23 +27,23 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group  block p-3 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-blue-800/[0.6] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-blue-600/[0.6] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
-                  transition: { duration: 0.15 },
+                  transition: { duration: 0.01 },
                 }}
                 exit={{
                   opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
+                  transition: { duration: 0.15, delay: 0.3 },
                 }}
               />
             )}

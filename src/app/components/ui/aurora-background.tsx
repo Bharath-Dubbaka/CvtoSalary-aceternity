@@ -71,7 +71,7 @@ export function AuroraBackgroundDemo() {
                CVtoSalary
             </div>
             <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-               Handcrafted resumes designed by professional as per your niche
+               Handcrafted resumes designed by specialists based on your niche
             </div>
          </motion.div>
       </AuroraBackground>
