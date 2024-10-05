@@ -13,6 +13,7 @@ import { useState } from "react";
 import { cn } from "../../utils/cn";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { NavbarDemo } from "./components/ui/navbar-menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,7 @@ export default function RootLayout({
       <html lang="en">
          <body className={inter.className}>
             <div className="relative w-full flex items-center justify-center">
-               <FloatingNavDemo />
+               <NavbarDemo />
             </div>
             {children}
          </body>
