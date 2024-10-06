@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
 
             <div>
                a) Use any data and information supplied by the user in
-               connection with this agreement for the company's own purpose, the
+               connection with this agreement for the companys own purpose, the
                company supplying such data and information to any other
                associated companies or selected third parties including search
                engines or for promotional mails or business updates or the
@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
                provided by us are our best effort and best in class and provided
                very economically. The selection in interview depends on many
                criteria like your current profile, experience, qualification
-               etc. In today's scenario there is much competition in the market
+               etc. In today scenario there is much competition in the market
                and this has to be understand by job seeker.
             </div>
             <div>Payment card /Net banking details</div>
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
                provided by you for availing of services on www.bookyourcv.com
                will be correct and accurate and you shall not use the credit
                card /banking details which is not lawfully owned by you. We
-               don't store any of your password or confidential information
+               do not store any of your password or confidential information
                related to your credit/debit card or bank details. You further
                agree and undertake to provide the correct and valid credit card
                details to Payment Gateway Service provider. Further the said
