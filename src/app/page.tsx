@@ -238,7 +238,7 @@ export const projects = [
    {
       title: "LinkedIn profile",
       description:
-         "Enhance your profile's visibility by 70%, attracting more recruiters and opportunities, Optimized LinkedIn profiles that showcase your professional brand and attract opportunities.",
+         "Enhance your profiles visibility by 70%, attracting more recruiters and opportunities, Optimized LinkedIn profiles that showcase your professional brand and attract opportunities.",
       link: "#2",
    },
    {
@@ -248,7 +248,7 @@ export const projects = [
       link: "#3",
    },
    {
-      title: "SOP's",
+      title: "SOPs",
       description:
          "Increase your acceptance odds with SOPs that resonate, achieving a 90% success rate as per stats, Expertly crafted Statements of Purpose (SOPs) that eloquently convey your aspirations and achievements.",
       link: "#4",
@@ -275,7 +275,7 @@ const testimonials = [
       title: "A Tale of Two Cities",
    },
    {
-      quote: "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+      quote: "To be, or not to be, that is the question: Whether it is nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
       name: "William Shakespeare",
       title: "Hamlet",
    },

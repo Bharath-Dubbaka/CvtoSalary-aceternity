@@ -31,7 +31,7 @@ export default function RootLayout({
       <html lang="en">
          <body className={inter.className}>
             <div className="relative w-full flex items-center justify-center">
-               <NavbarDemo />
+               <FloatingNavDemo />
             </div>
             {children}
          </body>
@@ -49,14 +49,23 @@ export function FloatingNavDemo() {
          ),
       },
       {
-         name: "Privacy",
+         name: "Contact",
          link: "/privacypolicy",
          icon: (
             <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
          ),
       },
+
       {
-         name: "T&C",
+         name: "About",
+         link: "/termsandconditions",
+         icon: (
+            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
+
+      {
+         name: "FAQ",
          link: "/termsandconditions",
          icon: (
             <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
