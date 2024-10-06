@@ -25,6 +25,74 @@ import { Timeline, TimelineDemo } from "./components/ui/timeline";
 import { AuroraBackgroundDemo } from "./components/ui/aurora-background";
 
 export default function Home() {
+   const projects = [
+      {
+         title: "Professional Resume writing",
+         description:
+            "Boost your job prospects with ATS proof resumes tailored to stand out in a competitive market, Tailored resumes that captivate employers, highlighting your skills and experience for maximum impact.",
+         link: "#1",
+      },
+      {
+         title: "LinkedIn profile",
+         description:
+            "Enhance your profiles visibility by 70%, attracting more recruiters and opportunities, Optimized LinkedIn profiles that showcase your professional brand and attract opportunities.",
+         link: "#2",
+      },
+      {
+         title: "Cover Letter",
+         description:
+            "Compelling cover letters that complement your resume, emphasizing your suitability for the role, expertly crafted to highlight your strengths and aspirations, ensuring you stand out to potential employers.",
+         link: "#3",
+      },
+      {
+         title: "SOPs",
+         description:
+            "Increase your acceptance odds with SOPs that resonate, achieving a 90% success rate as per stats, Expertly crafted Statements of Purpose (SOPs) that eloquently convey your aspirations and achievements.",
+         link: "#4",
+      },
+      {
+         title: "Personal Branding",
+         description:
+            "Ensure your application bypasses ATS filters with 99% compatibility assurance, Ensuring your documents are ATS (Applicant Tracking System) compatible, maximizing your chances of getting noticed.",
+         link: "#5",
+      },
+
+      {
+         title: "Career Coaching",
+         description:
+            "Personalized guidance to navigate career challenges and unlock your full potential, Unlock your full potential and accelerate your career with personalized coaching sessions tailored to your unique goals and aspirations.",
+         link: "#6",
+      },
+   ];
+
+   const testimonials = [
+      {
+         quote: "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+         name: "Charles Dickens",
+         title: "A Tale of Two Cities",
+      },
+      {
+         quote: "To be, or not to be, that is the question: Whether it is nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+         name: "William Shakespeare",
+         title: "Hamlet",
+      },
+      {
+         quote: "All that we see or seem is but a dream within a dream.",
+         name: "Edgar Allan Poe",
+         title: "A Dream Within a Dream",
+      },
+      {
+         quote: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+         name: "Jane Austen",
+         title: "Pride and Prejudice",
+      },
+      {
+         quote: "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+         name: "Herman Melville",
+         title: "Moby-Dick",
+      },
+   ];
+
    const words = `We are a passionate team with 20 years of experience combined. With our industry knowledge, we help you craft your ATS-friendly CV/resume, cover letter, and LinkedIn profile services, along with career coaching and personal branding.
   `;
    return (
@@ -227,73 +295,3 @@ export default function Home() {
       </div>
    );
 }
-
-export const projects = [
-   {
-      title: "Professional Resume writing",
-      description:
-         "Boost your job prospects with ATS proof resumes tailored to stand out in a competitive market, Tailored resumes that captivate employers, highlighting your skills and experience for maximum impact.",
-      link: "#1",
-   },
-   {
-      title: "LinkedIn profile",
-      description:
-         "Enhance your profiles visibility by 70%, attracting more recruiters and opportunities, Optimized LinkedIn profiles that showcase your professional brand and attract opportunities.",
-      link: "#2",
-   },
-   {
-      title: "Cover Letter",
-      description:
-         "Compelling cover letters that complement your resume, emphasizing your suitability for the role, expertly crafted to highlight your strengths and aspirations, ensuring you stand out to potential employers.",
-      link: "#3",
-   },
-   {
-      title: "SOPs",
-      description:
-         "Increase your acceptance odds with SOPs that resonate, achieving a 90% success rate as per stats, Expertly crafted Statements of Purpose (SOPs) that eloquently convey your aspirations and achievements.",
-      link: "#4",
-   },
-   {
-      title: "Personal Branding",
-      description:
-         "Ensure your application bypasses ATS filters with 99% compatibility assurance, Ensuring your documents are ATS (Applicant Tracking System) compatible, maximizing your chances of getting noticed.",
-      link: "#5",
-   },
-
-   {
-      title: "Career Coaching",
-      description:
-         "Personalized guidance to navigate career challenges and unlock your full potential, Unlock your full potential and accelerate your career with personalized coaching sessions tailored to your unique goals and aspirations.",
-      link: "#6",
-   },
-];
-
-const testimonials = [
-   {
-      quote: "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-      name: "Charles Dickens",
-      title: "A Tale of Two Cities",
-   },
-   {
-      quote: "To be, or not to be, that is the question: Whether it is nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-      name: "William Shakespeare",
-      title: "Hamlet",
-   },
-   {
-      quote: "All that we see or seem is but a dream within a dream.",
-      name: "Edgar Allan Poe",
-      title: "A Dream Within a Dream",
-   },
-   {
-      quote: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      name: "Jane Austen",
-      title: "Pride and Prejudice",
-   },
-   {
-      quote: "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-      name: "Herman Melville",
-      title: "Moby-Dick",
-   },
-];
-
-
