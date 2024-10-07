@@ -9,6 +9,13 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import applyPng from "../../images/undraw_applyNew.png";
 import sitPng from "../../images/undraw_sitdown.png";
+import study from "../../images/study.png";
+import time from "../../images/time.png";
+import revisionPng from "../../images/revisionPng.png";
+import growthPng from "../../images/growthPng.png";
+import happycustomer from "../../images/happycustomer.png";
+import approvePng from "../../images/approvePng.png";
+import reachingPng from "../../images/reachingPng.png";
 
 interface TimelineEntry {
    title: string;
@@ -109,11 +116,11 @@ export function TimelineDemo() {
                   </div>
                   <div className=" w-[50%]">
                      <Image
-                        src={sitPng}
+                        src={reachingPng}
                         alt="startup template"
                         width={500}
                         height={500}
-                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[15rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                      />
                   </div>
                </div>
@@ -124,7 +131,7 @@ export function TimelineDemo() {
                         alt="startup template"
                         width={500}
                         height={500}
-                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[15rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                      />
                   </div>
                   <div className="text-neutral-800 dark:text-neutral-200  mb-8 w-[50%] pr-0 p-2 flex items-center">
@@ -150,22 +157,22 @@ export function TimelineDemo() {
                   </div>
                   <div className=" w-[50%]">
                      <Image
-                        src={sitPng}
+                        src={time}
                         alt="startup template"
                         width={500}
                         height={500}
-                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[15rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                      />
                   </div>
                </div>
                <div className="flex">
                   <div className=" w-[50%]">
                      <Image
-                        src={applyPng}
+                        src={study}
                         alt="startup template"
                         width={500}
                         height={500}
-                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[15rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                      />
                   </div>
                   <div className="text-neutral-800 dark:text-neutral-200 mb-8 w-[50%] pr-0 p-2 flex items-center">
@@ -195,18 +202,18 @@ export function TimelineDemo() {
                <div>
                   <div className="grid grid-cols-2 gap-4">
                      <Image
-                        src={applyPng}
+                        src={growthPng}
                         alt="startup template"
                         width={500}
                         height={500}
-                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[15rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                      />
                      <Image
-                        src={sitPng}
+                        src={revisionPng}
                         alt="startup template"
                         width={500}
                         height={500}
-                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[15rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        className="rounded-lg object-cover h-20 md:h-60 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                      />
                   </div>
                </div>
@@ -241,18 +248,18 @@ export function TimelineDemo() {
                </div>
                <div className="grid grid-cols-2 gap-4">
                   <Image
-                     src={sitPng}
+                     src={happycustomer}
                      alt="hero template"
                      width={500}
                      height={500}
-                     className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                     className="rounded-lg object-cover h-20 md:h-44 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                   />
                   <Image
-                     src={applyPng}
+                     src={approvePng}
                      alt="feature template"
                      width={500}
                      height={500}
-                     className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                     className="rounded-lg object-cover h-20 md:h-44 lg:h-[12rem] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                   />
                </div>
             </div>
