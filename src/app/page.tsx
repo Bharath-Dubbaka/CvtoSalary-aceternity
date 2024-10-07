@@ -248,8 +248,10 @@ export default function Home() {
                </BackgroundGradient>
             </div>
          </div>
-
-         <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+         <div className="h-[30rem] mt-6 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+            <div className="text-white p-[2rem] text-[3rem]">
+               TESTIMONIALS:{" "}
+            </div>
             <InfiniteMovingCards
                items={testimonials}
                direction="right"
