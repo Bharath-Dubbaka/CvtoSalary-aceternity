@@ -85,47 +85,46 @@ export const FloatingNav = ({
    );
 };
 
-
 export function FloatingNavDemo() {
-  const navItems = [
-     {
-        name: "Home",
-        link: "/",
-        icon: (
-           <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
-        ),
-     },
-     {
-        name: "Contact",
-        link: "/privacypolicy",
-        icon: (
-           <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
-        ),
-     },
+   const navItems = [
+      {
+         name: "Home",
+         link: "/",
+         icon: (
+            <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
+      {
+         name: "Contact",
+         link: "/contactus",
+         icon: (
+            <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
 
-     {
-        name: "About",
-        link: "/termsandconditions",
-        icon: (
-           <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-        ),
-     },
+      {
+         name: "About",
+         link: "/termsandconditions",
+         icon: (
+            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
 
-     {
-        name: "FAQ",
-        link: "/termsandconditions",
-        icon: (
-           <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-        ),
-     },
-  ];
-  return (
-     <div className="relative  w-full">
-        <FloatingNav navItems={navItems} />
-        <DummyContent />
-     </div>
-  );
+      {
+         name: "FAQ",
+         link: "/termsandconditions",
+         icon: (
+            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
+   ];
+   return (
+      <div className="relative  w-full">
+         <FloatingNav navItems={navItems} />
+         <DummyContent />
+      </div>
+   );
 }
 const DummyContent = () => {
-  return <></>;
+   return <></>;
 };
