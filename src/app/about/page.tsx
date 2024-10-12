@@ -39,7 +39,7 @@ const About = () => {
                ideal jobs by creating distinctive resumes and optimizing
                LinkedIn profiles for maximum visibility. As industry leaders in
                resume writing and LinkedIn optimization, we recognize that
-               today's job market requires more than simply skills; it also
+               today&apos;s job market requires more than simply skills; it also
                requires a compelling personal brand.
             </p>
             <p className="mb-6">
@@ -64,8 +64,8 @@ const About = () => {
             </p>
             <p className="mb-6">
                <div>Global Hiring Trends:</div>
-               In today's competitive employment market, simply possessing the
-               appropriate abilities isn't enough; you also need to be able to
+               In today&apos;s competitive employment market, simply possessing the
+               appropriate abilities isn&apos;t enough; you also need to be able to
                showcase them effectively. With automated screening technologies
                and digital-first recruiting processes on the rise, job seekers
                want professionally produced documents and optimized profiles to
@@ -79,7 +79,7 @@ const About = () => {
                ***At cvtosalary, we believe that the right combination of a
                well-written resume and a strategically optimized LinkedIn
                profile is the key to unlocking new career opportunities. Whether
-               you’re an entry-level candidate or an experienced executive, our
+               you&apos;re an entry-level candidate or an experienced executive, our
                services are designed to elevate your professional brand and
                accelerate your job search success. Don’t let your dream job slip
                away—reach out to us today, and let us help you stand out in a
