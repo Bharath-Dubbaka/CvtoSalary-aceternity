@@ -93,8 +93,7 @@ export default function Home() {
       },
    ];
 
-   const words = `We are a passionate team with 20 years of experience combined. With our industry knowledge, we help you craft your ATS-friendly CV/resume, cover letter, and LinkedIn profile services, along with career coaching and personal branding.
-  `;
+   const words = `We are a team with over 20 years of combined expertise focusing in ATS-friendly resumes, cover letters, LinkedIn profiles, and career coaching to help you build your unique brand`;
    return (
       <div>
          <div
@@ -121,7 +120,7 @@ export default function Home() {
             </LampContainer> */}
          </div>
          <div
-            className="px-4"
+            className="px-4 mt-8 "
             style={{
                position: "relative",
                bottom: "20rem",
@@ -133,13 +132,13 @@ export default function Home() {
          </div>
          <div className="-mt-[16rem] relative z-20 text-gray-300">
             <div
+               className="text-3xl md:text-5xl"
                style={{
-                  fontSize: "3rem",
                   display: "flex",
                   justifyContent: "center",
                }}
             >
-               OUR MAIN SERVICES :
+               OUR SERVICES :
             </div>
             <div className="max-w-5xl mx-auto px-8">
                <HoverEffect items={projects} />

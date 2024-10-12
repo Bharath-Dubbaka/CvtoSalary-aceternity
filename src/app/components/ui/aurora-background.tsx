@@ -67,10 +67,10 @@ export function AuroraBackgroundDemo() {
             }}
             className="relative flex flex-col gap-4 items-center -mt-40 sm:text-3xl  justify-center px-4"
          >
-            <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+            <div className=" text-5xl sm:text-7xl md:text-7xl font-bold dark:text-white text-center">
                CVtoSalary
             </div>
-            <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
+            <div className="font-extralight text-2xl sm:text-4xl md:text-4xl dark:text-neutral-200 py-4 text-center">
                Handcrafted resumes designed by specialists based on your niche
             </div>
          </motion.div>
