@@ -104,7 +104,7 @@ export function FloatingNavDemo() {
 
       {
          name: "About",
-         link: "/termsandconditions",
+         link: "/about",
          icon: (
             <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
          ),
@@ -112,7 +112,7 @@ export function FloatingNavDemo() {
 
       {
          name: "FAQ",
-         link: "/termsandconditions",
+         link: "/faq",
          icon: (
             <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
          ),
