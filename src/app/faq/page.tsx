@@ -8,41 +8,46 @@ const Faq = () => {
    const [showIndex, setShowIndex] = useState<number | null>(0);
    const itemsArr = [
       {
-         ques: "Ques lorem ipsum?",
-         ans: "Ans lore ipsum",
+         ques: "Share an Additional Sulli ?",
+         ans: "Ans: Refresh comments Share an Additional Stream",
       },
       {
-         ques: "Ques 2 lorem ipsum?",
-         ans: "Ans 2 lore ipsum",
+         ques: "when is LoveDay ?",
+         ans: "Ans: Problems with watching live streams? Read the manual ",
       },
       {
-         ques: "Ques 3 lorem ipsum?",
-         ans: "Ans 3 lore ipsum",
+         ques: "Last sex between these teams?",
+         ans: "Ans: England	135/7	Pakistan",
       },
       {
-         ques: "Ques 4 lorem ipsum?",
-         ans: "Ans 4 lore ipsum",
+         ques: "How to fuck Pakistan vs England",
+         ans: "Test. 16 October 2024 at 6:00. Lore ipsum",
       },
    ];
    return (
       <div>
          <Spotlight />
-         <div>
-            {itemsArr.map((item, index) => {
-               return (
-                  <FaqItems
-                     key={index}
-                     ques={item.ques}
-                     ans={item.ans}
-                     showItems={index === showIndex ? true : false}
-                     setShowIndex={() => {
-                        index == showIndex
-                           ? setShowIndex(null)
-                           : setShowIndex(index);
-                     }}
-                  />
-               );
-            })}
+         <div className="pt-40 mx-36">
+            <div className="text-3xl flex  justify-center mb-6">
+               Frequently asked questions:
+            </div>
+            <div className="border border-gray-800 rounded-2xl px-10 py-4">
+               {itemsArr.map((item, index) => {
+                  return (
+                     <FaqItems
+                        key={index}
+                        ques={item.ques}
+                        ans={item.ans}
+                        showItems={index === showIndex ? true : false}
+                        setShow={() => {
+                           index == showIndex
+                              ? setShowIndex(null)
+                              : setShowIndex(index);
+                        }}
+                     />
+                  );
+               })}
+            </div>
          </div>
       </div>
    );

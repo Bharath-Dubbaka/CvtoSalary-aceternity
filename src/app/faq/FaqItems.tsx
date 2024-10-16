@@ -3,26 +3,27 @@ interface FaqItemProps {
    ques: string;
    ans: string;
    showItems: any;
-   setShowIndex: any;
+   setShow: any;
    key: any;
 }
 const FaqItems: React.FC<FaqItemProps> = ({
    ques,
    ans,
    showItems,
-   setShowIndex,
+   setShow,
    key,
 }) => {
    return (
-      <div>
+      <div className="border border-gray-800 rounded-2xl p-4 mb-2">
          <div
             onClick={(e) => {
-             setShowIndex()
+               setShow();
             }}
+            className="font-semibold"
          >
             {ques}
          </div>
-         <div className="">{showItems ? <p>{ans}</p> : null}</div>
+         <>{showItems ? <div className="pt-2">{ans}</div> : null}</>
       </div>
    );
 };
