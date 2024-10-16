@@ -8,20 +8,20 @@ const Faq = () => {
    const [showIndex, setShowIndex] = useState<number | null>(0);
    const itemsArr = [
       {
-         ques: "Share an Additional Sulli ?",
-         ans: "Ans: Refresh comments Share an Additional Stream",
+         ques: "Share an Additional space ?",
+         ans: "Ans: Refresh comments Share an Additional Stream Refresh comments Share an Additional Stream Refresh comments Share an Additional Stream Refresh comments Share an Additional Stream",
       },
       {
          ques: "when is LoveDay ?",
-         ans: "Ans: Problems with watching live streams? Read the manual ",
+         ans: "Ans: Problems with watching live streams? Read the manual  Problems with watching live streams? Read the manual  Problems with watching live streams? Read the manual ",
       },
       {
-         ques: "Last sex between these teams?",
-         ans: "Ans: England	135/7	Pakistan",
+         ques: "Last  between these teams?",
+         ans: "Ans: England	135/7	Pakistan  Problems with watching live streams? Read the manual  Problems with watching live streams? Read the manual  Problems with watching live streams? Read the manual ",
       },
       {
-         ques: "How to fuck Pakistan vs England",
-         ans: "Test. 16 October 2024 at 6:00. Lore ipsum",
+         ques: "How to  Pakistan vs England",
+         ans: "Test. 16 October 2024 at 6:00. Lore ipsum Test. 16 October 2024 at 6:00. Lore ipsum Test. 16 October 2024 at 6:00. Lore ipsum Test. 16 October 2024 at 6:00. Lore ipsum ",
       },
    ];
    return (
