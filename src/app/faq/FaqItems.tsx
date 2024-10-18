@@ -1,3 +1,4 @@
+import { p } from "framer-motion/client";
 import React from "react";
 interface FaqItemProps {
    ques: string;
@@ -23,7 +24,15 @@ const FaqItems: React.FC<FaqItemProps> = ({
          >
             {ques}
          </div>
-         <>{showItems ? <div className="pt-2">{ans}</div> : null}</>
+         <>
+            {showItems ? (
+               <div className="pt-2">
+                  {" "}
+                  <hr className="h-px mb-4 bg-gray-200 border-0 dark:bg-gray-700" />
+                  {ans}
+               </div>
+            ) : null}
+         </>
       </div>
    );
 };
