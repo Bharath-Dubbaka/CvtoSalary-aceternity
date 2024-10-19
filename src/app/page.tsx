@@ -148,14 +148,14 @@ export default function Home() {
             <TimelineDemo />
          </div>
          <div
+            className="text-3xl md:text-5xl"
             style={{
-               fontSize: "3rem",
                display: "flex",
                justifyContent: "center",
                padding: "2rem",
             }}
          >
-            SHOP
+            SHOP:
          </div>
          <div
             style={{
@@ -248,7 +248,7 @@ export default function Home() {
             </div>
          </div>
          <div className="h-[30rem] mt-6 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            <div className="text-white p-[2rem] text-[3rem]">
+            <div className="text-white p-[1rem] text-3xl md:text-5xl">
                TESTIMONIALS:{" "}
             </div>
             <InfiniteMovingCards
