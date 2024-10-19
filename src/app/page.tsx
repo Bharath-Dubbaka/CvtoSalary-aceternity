@@ -259,20 +259,23 @@ export default function Home() {
          </div>
 
          <footer className="bg-slate-800 text-white py-4">
-            <div className="container mx-auto flex items-center justify-between">
-               <div className="text-sm">
+            <div className="container flex items-center justify-between">
+               <div className="text-sm flex flex-wrap flex-col px-4 ">
                   <Link
                      href="/termsandconditions"
-                     className="text-gray-300 mr-4"
+                     className="text-gray-300 mr-4 mb-2"
                   >
                      Terms & Conditions
                   </Link>
-                  <Link href="/privacypolicy" className="text-gray-300 mr-4">
+                  <Link
+                     href="/privacypolicy"
+                     className="text-gray-300 mr-4 mb-2"
+                  >
                      Privacy Policy
                   </Link>
-                  <a href="#" className="text-gray-300">
+                  <div className="text-gray-300 mb-2">
                      Copyright@CVtoSalary2024
-                  </a>
+                  </div>
                </div>
             </div>
          </footer>
