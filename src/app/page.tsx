@@ -87,7 +87,7 @@ export default function Home() {
          title: "SOC Engineer, USA",
       },
       {
-         quote: "After having my LinkedIn profile optimized by CVtoSalary, I started receiving more profile views and messages from recruiters. Strongly suggest for anyone looking to boost their digital presence!",
+         quote: "After having my LinkedIn profile optimized by CVtoSalary, I started receiving more profile views and messages from recruiters. Strongly suggest for anyone looking to boost their digital presence!   ",
          name: "Shiva Subramanyam",
          title: "Sr. Financial Analyst, IND",
       },

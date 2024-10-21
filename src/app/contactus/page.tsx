@@ -34,55 +34,65 @@ function ContactUs() {
    };
 
    return (
-      <div className="mt-32 sm:mt-36 md:mt-40 flex flex-col  justify-center items-center ">
+      <div className="">
          <Spotlight
             className="-top-40 left-0 md:left-60 md:-top-20"
             fill="white"
          />
-         <div className="text-white text-3xl  font-bold">Contact us</div>
-
-         <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="text-black flex flex-col w-[88%] sm:w-[70%] md:w-[60%] mb-40  "
+         <div
+            className="mt-32 sm:mt-36 md:mt-40 flex flex-col  justify-center items-center "
+            // style={{
+            //    position: "relative",
+            //    bottom: "20rem",
+            //    opacity: "0.5",
+            //    textAlign: "center",
+            // }}
          >
-            <div className="flex flex-col mb-4">
-               <label className="text-white mb-1">Name:</label>
+            <div className="text-white text-3xl  font-bold">Contact us</div>
+
+            <form
+               ref={form}
+               onSubmit={sendEmail}
+               className="text-black flex flex-col w-[88%] sm:w-[70%] md:w-[60%] mb-40  "
+            >
+               <div className="flex flex-col mb-4">
+                  <label className="text-white mb-1">Name:</label>
+                  <input
+                     type="text"
+                     name="user_name"
+                     className="rounded  h-8 font-semibold pl-2"
+                  />
+               </div>
+               <div className="flex flex-col  mb-4">
+                  <label className="text-white mb-1">Email:</label>
+                  <input
+                     type="email"
+                     name="user_email"
+                     className="rounded  h-8 font-semibold pl-2"
+                  />
+               </div>
+               <div className="flex flex-col  mb-4">
+                  <label className="text-white mb-1">Subject:</label>
+                  <input
+                     type="text"
+                     name="user_subject"
+                     className="rounded h-8 font-semibold pl-2"
+                  />
+               </div>
+               <div className="flex flex-col  mb-4">
+                  <label className="text-white mb-1">Message:</label>
+                  <textarea
+                     name="message"
+                     className="rounded font-semibold pl-2 h-32"
+                  />
+               </div>
                <input
-                  type="text"
-                  name="user_name"
-                  className="rounded  h-8 font-semibold pl-2"
+                  type="submit"
+                  value="Send"
+                  className="text-white bg-slate-500 rounded h-12 font-bold"
                />
-            </div>
-            <div className="flex flex-col  mb-4">
-               <label className="text-white mb-1">Email:</label>
-               <input
-                  type="email"
-                  name="user_email"
-                  className="rounded  h-8 font-semibold pl-2"
-               />
-            </div>
-            <div className="flex flex-col  mb-4">
-               <label className="text-white mb-1">Subject:</label>
-               <input
-                  type="text"
-                  name="user_subject"
-                  className="rounded h-8 font-semibold pl-2"
-               />
-            </div>
-            <div className="flex flex-col  mb-4">
-               <label className="text-white mb-1">Message:</label>
-               <textarea
-                  name="message"
-                  className="rounded font-semibold pl-2 h-32"
-               />
-            </div>
-            <input
-               type="submit"
-               value="Send"
-               className="text-white bg-slate-500 rounded h-12 font-bold"
-            />
-         </form>
+            </form>
+         </div>
       </div>
    );
 }
