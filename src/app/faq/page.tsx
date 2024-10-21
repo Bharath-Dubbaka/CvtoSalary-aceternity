@@ -57,28 +57,41 @@ const Faq = () => {
       },
    ];
    return (
-      <div>
-         <Spotlight />
-         <div className="pt-40 mx-36">
-            <div className="text-3xl flex  justify-center mb-6">
-               Frequently asked questions:
-            </div>
-            <div className="border border-gray-800 rounded-2xl px-10 py-4">
-               {itemsArr.map((item, index) => {
-                  return (
-                     <FaqItems
-                        key={index}
-                        ques={item.ques}
-                        ans={item.ans}
-                        showItems={index === showIndex ? true : false}
-                        setShow={() => {
-                           index == showIndex
-                              ? setShowIndex(null)
-                              : setShowIndex(index);
-                        }}
-                     />
-                  );
-               })}
+      <div className="">
+         <Spotlight
+            className="-top-10 left-0 sm:left-60 sm:-top-20 md:left-60 md:-top-20  max-w-full"
+            fill="white"
+         />
+         <div
+            className="mt-32 sm:mt-36 md:mt-32 flex flex-col  justify-center items-center "
+            // style={{
+            //    position: "relative",
+            //    bottom: "20rem",
+            //    opacity: "0.5",
+            //    textAlign: "center",
+            // }}
+         >
+            <div className="pt-8 mx-36">
+               <div className="text-white text-3xl  font-bold flex  justify-center mb-6">
+                  Frequently asked questions:
+               </div>
+               <div className="border border-gray-800 rounded-2xl px-10 py-4">
+                  {itemsArr.map((item, index) => {
+                     return (
+                        <FaqItems
+                           key={index}
+                           ques={item.ques}
+                           ans={item.ans}
+                           showItems={index === showIndex ? true : false}
+                           setShow={() => {
+                              index == showIndex
+                                 ? setShowIndex(null)
+                                 : setShowIndex(index);
+                           }}
+                        />
+                     );
+                  })}
+               </div>
             </div>
          </div>
       </div>
