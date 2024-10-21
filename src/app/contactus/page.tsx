@@ -6,7 +6,8 @@ import { Spotlight } from "../components/ui/Spotlight";
 function ContactUs() {
    const form = useRef<HTMLFormElement | null>(null);
    const apiKey = process.env.NEXT_PUBLIC_API_KEY || "fallback-api-key";
-   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID || "fallback-template-id";
+   const templateId =
+      process.env.NEXT_PUBLIC_TEMPLATE_ID || "fallback-template-id";
    const serviceId =
       process.env.NEXT_PUBLIC_SERVICE_ID_KEY || "fallback-service-id";
    // Check for missing env variables and log or throw error if any are missing
@@ -43,7 +44,7 @@ function ContactUs() {
          <form
             ref={form}
             onSubmit={sendEmail}
-            className="text-black flex flex-col max-w-[85%] sm:w-[70%] md:w-[60%] mb-40  "
+            className="text-black flex flex-col w-[88%] sm:w-[70%] md:w-[60%] mb-40  "
          >
             <div className="flex flex-col mb-4">
                <label className="text-white mb-1">Name:</label>
@@ -73,7 +74,7 @@ function ContactUs() {
                <label className="text-white mb-1">Message:</label>
                <textarea
                   name="message"
-                  className="rounded font-semibold pl-2"
+                  className="rounded font-semibold pl-2 h-32"
                />
             </div>
             <input
