@@ -36,7 +36,7 @@ function ContactUs() {
    return (
       <div className="">
          <Spotlight
-            className="-top-40 left-0 md:left-60 md:-top-20"
+            className="z-10"
             fill="white"
          />
          <div
