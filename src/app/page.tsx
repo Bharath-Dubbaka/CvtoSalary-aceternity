@@ -67,29 +67,34 @@ export default function Home() {
 
    const testimonials = [
       {
-         quote: "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-         name: "Charles Dickens",
-         title: "A Tale of Two Cities",
+         quote: "Helped me not only to get my work noticed, but also land interviews, Highly recommended.",
+         name: "Vijay K",
+         title: "Embedded Engineer, USA",
       },
       {
-         quote: "To be, or not to be, that is the question: Whether it is nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-         name: "William Shakespeare",
-         title: "Hamlet",
+         quote: "Their ability to match my resume to industry-specific keywords was vital to being noticed as i have much diverse skills than usual. I definitely recommend them if you are experiencing rejections during your initial screening.",
+         name: "Radha Krishnan",
+         title: "Senior Software Engineer, CAN",
       },
       {
-         quote: "All that we see or seem is but a dream within a dream.",
-         name: "Edgar Allan Poe",
-         title: "A Dream Within a Dream",
+         quote: "They not only improved my resume, but also highlighted the value of keyword optimization to get better reach from companies and recruiters I had no idea how vital that was until they walked me through it.",
+         name: "Jaideep Bannu",
+         title: "AV/Network Engineer, IND",
       },
       {
-         quote: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-         name: "Jane Austen",
-         title: "Pride and Prejudice",
+         quote: "They understand the unique challenges developers face and also helped me understand how recruiting works so that I could better comprehend and take the necessary steps.",
+         name: "Krishna Mani",
+         title: "SOC Engineer, USA",
       },
       {
-         quote: "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-         name: "Herman Melville",
-         title: "Moby-Dick",
+         quote: "After having my LinkedIn profile optimized by CVtoSalary, I started receiving more profile views and messages from recruiters. Strongly suggest for anyone looking to boost their digital presence!",
+         name: "Shiva Subramanyam",
+         title: "Sr. Financial Analyst, IND",
+      },
+      {
+         quote: "I love working with CVtoSalary because they truly put their clients first. They took the time to understand my background as a developer and tailored my resume and LinkedIn profile in a way that highlighted my technical skills perfectly and get more visibility.",
+         name: "Raja Rao",
+         title: "Full Stack Developer, IND",
       },
    ];
 
@@ -260,7 +265,7 @@ export default function Home() {
 
          <footer className="bg-slate-800 text-white py-4">
             <div className="container flex items-center justify-between">
-               <div className="text-sm flex flex-wrap flex-col px-4 ">
+               <div className="text-sm flex flex-wrap px-4 ">
                   <Link
                      href="/termsandconditions"
                      className="text-gray-300 mr-4 mb-2"
