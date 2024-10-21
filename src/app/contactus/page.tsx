@@ -48,7 +48,15 @@ function ContactUs() {
             //    textAlign: "center",
             // }}
          >
-            <div className="text-white text-3xl  font-bold">Contact us</div>
+            <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+               <div className="text:3xl sm:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                  Contact Us
+                  {/* / <br /> Privacy policy. */}
+               </div>
+               <p className="mt-2 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
+                  Our Executives will reach you within 24hrs.
+               </p>
+            </div>
 
             <form
                ref={form}
