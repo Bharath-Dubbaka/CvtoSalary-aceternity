@@ -15,14 +15,15 @@ const FaqItems: React.FC<FaqItemProps> = ({
    key,
 }) => {
    return (
-      <div className="border border-gray-800 rounded-2xl p-4 mb-2">
+      <div className="border border-gray-800 rounded-2xl p-4 mb-2 ">
          <div
             onClick={(e) => {
                setShow();
             }}
-            className="font-semibold"
+            className="font-semibold flex justify-between "
          >
-            {ques}
+            <div>{ques}</div>
+            <div>{showItems ? "🔻" : "🟩"}</div>
          </div>
          <>
             {showItems ? (

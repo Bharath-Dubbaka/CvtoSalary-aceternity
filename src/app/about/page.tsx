@@ -18,7 +18,7 @@ const About = () => {
             // }}
          >
             <div className="pt-8 mx-36">
-               <div className="text:3xl sm:text-4xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+               <div className="text-3xl sm:text-4xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   About Our Team
                   {/* / <br /> Privacy policy. */}
                </div>

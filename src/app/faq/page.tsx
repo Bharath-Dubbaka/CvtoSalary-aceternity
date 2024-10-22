@@ -71,12 +71,12 @@ const Faq = () => {
             //    textAlign: "center",
             // }}
          >
-            <div className="pt-8 mx-36">
+            <div className="pt-8 mx-36 w-[70%]">
                <div className="text:3xl sm:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   Frequently asked questions:
                   {/* / <br /> Privacy policy. */}
                </div>
-               <div className="border border-gray-800 rounded-2xl px-10 py-4 mt-6">
+               <div className="border border-gray-800 rounded-2xl px-10 py-4 mt-6 ">
                   {itemsArr.map((item, index) => {
                      return (
                         <FaqItems
