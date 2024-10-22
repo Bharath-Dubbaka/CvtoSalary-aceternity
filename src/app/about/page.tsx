@@ -17,7 +17,7 @@ const About = () => {
             //    textAlign: "center",
             // }}
          >
-            <div className="pt-8 mx-36">
+            <div className="pt-8 mx-8 sm:mx-36 md:mx-36">
                <div className="text-3xl sm:text-4xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   About Our Team
                   {/* / <br /> Privacy policy. */}
@@ -42,7 +42,7 @@ const About = () => {
             </div>
 
             <hr className=" bg-white" />
-            <div className="mt-12 mx-36">
+            <div className="mt-12 mx-8 sm:mx-36 md:mx-36">
                <div className="text-2xl mb-4">Why CVToSalary ?</div>
                <p className="mb-6">
                   <div>Our Expertise:</div>
@@ -87,7 +87,7 @@ const About = () => {
                </p>
             </div>
             <hr />
-            <div className="mx-36 mt-12 text-center">
+            <div className="mx-8 sm:mx-28 md:mx-28 mt-12 text-center ">
                <p>
                   ***At cvtosalary, we believe that the right combination of a
                   well-written resume and a strategically optimized LinkedIn
