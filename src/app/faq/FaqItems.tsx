@@ -15,19 +15,19 @@ const FaqItems: React.FC<FaqItemProps> = ({
    key,
 }) => {
    return (
-      <div className="border border-gray-800 rounded-2xl p-4 mb-2 ">
+      <div className="border border-gray-800 rounded-2xl p-4 mb-2 bg-slate-950">
          <div
             onClick={(e) => {
                setShow();
             }}
-            className="font-semibold flex justify-between "
+            className="font-semibold flex justify-between  cursor-pointer"
          >
-            <div>{ques}</div>
-            <div>{showItems ? "🔻" : "🟩"}</div>
+            <div className="my-1">{ques}</div>
+            <div className="my-1">{showItems ? "🔻" : "🟩"}</div>
          </div>
          <>
             {showItems ? (
-               <div className="pt-2">
+               <div className="pt-2 ">
                   {" "}
                   <hr className="h-px mb-4 bg-gray-200 border-0 dark:bg-gray-700" />
                   {ans}

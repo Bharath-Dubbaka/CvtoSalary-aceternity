@@ -59,7 +59,7 @@ const Faq = () => {
    return (
       <div className="">
          <Spotlight
-            className="-top-10 left-0 sm:left-60 sm:-top-20 md:left-60 md:-top-20  max-w-full"
+            className="-top-10 left-0 sm:left-60 sm:-top-20 md:left-60 md:-top-20  max-w-full fixed"
             fill="white"
          />
          <div

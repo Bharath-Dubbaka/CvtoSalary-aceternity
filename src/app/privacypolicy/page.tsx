@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
       <div>
          <div className="h-[35rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
             <Spotlight
-                className="-top-40 left-0 md:left-60 md:-top-20"
+                className="-top-40 left-0 md:left-60 md:-top-20 fixed"
                 fill="white"
             />
             {/* <AuroraBackgroundDemo /> */}
