@@ -3,18 +3,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import {
-   HoveredLink,
-   Menu,
-   MenuItem,
-   ProductItem,
-} from "./components/ui/navbar-menu";
-import { useState } from "react";
-import { cn } from "../../utils/cn";
-import { FloatingNav } from "./components/ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-import { NavbarDemo } from "./components/ui/navbar-menu";
 import { FloatingNavDemo } from "./components/ui/floating-navbar";
+import React, { useState , useEffect} from "react";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,12 +22,12 @@ export default function RootLayout({
    return (
       <html lang="en">
          <body className={inter.className}>
-            <div className="relative w-full flex items-center justify-center">
-               <FloatingNavDemo />
-            </div>
+            <FloatingNavDemo />
             {children}
          </body>
       </html>
    );
 }
+
+
 

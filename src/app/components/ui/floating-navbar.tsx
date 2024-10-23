@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
    motion,
    AnimatePresence,
@@ -9,7 +9,58 @@ import {
 import { cn } from "../../../../utils/cn";
 import Link from "next/link";
 // import { FloatingNav } from "./components/ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import {
+   IconHome,
+   IconAddressBook,
+   IconMessage,
+   IconZoomQuestion,
+   IconPhone,
+} from "@tabler/icons-react";
+import { useRouter } from "next/compat/router";
+
+export function FloatingNavDemo() {
+   const navItems = [
+      {
+         name: "Home",
+         link: "/",
+         icon: (
+            <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
+      {
+         name: "Contact",
+         link: "/contactus",
+         icon: (
+            <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
+
+      {
+         name: "About",
+         link: "/about",
+         icon: (
+            <IconZoomQuestion className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
+
+      {
+         name: "FAQ",
+         link: "/faq",
+         icon: (
+            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+         ),
+      },
+   ];
+   return (
+      <div className="relative  w-full">
+         <FloatingNav navItems={navItems} />
+         <DummyContent />
+      </div>
+   );
+}
+const DummyContent = () => {
+   return <></>;
+};
 
 export const FloatingNav = ({
    navItems,
@@ -23,9 +74,13 @@ export const FloatingNav = ({
    className?: string;
 }) => {
    const { scrollYProgress } = useScroll();
+   const router = useRouter();
+   const [isMounted, setIsMounted] = useState(false);
 
    const [visible, setVisible] = useState(false);
-
+   useEffect(() => {
+      setIsMounted(true); // Set isMounted to true on component mount
+   }, []);
    useMotionValueEvent(scrollYProgress, "change", (current) => {
       // Check if current is not undefined and is a number
       if (typeof current === "number") {
@@ -83,48 +138,4 @@ export const FloatingNav = ({
          </motion.div>
       </AnimatePresence>
    );
-};
-
-export function FloatingNavDemo() {
-   const navItems = [
-      {
-         name: "Home",
-         link: "/",
-         icon: (
-            <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
-         ),
-      },
-      {
-         name: "Contact",
-         link: "/contactus",
-         icon: (
-            <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
-         ),
-      },
-
-      {
-         name: "About",
-         link: "/about",
-         icon: (
-            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-         ),
-      },
-
-      {
-         name: "FAQ",
-         link: "/faq",
-         icon: (
-            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-         ),
-      },
-   ];
-   return (
-      <div className="relative  w-full">
-         <FloatingNav navItems={navItems} />
-         <DummyContent />
-      </div>
-   );
-}
-const DummyContent = () => {
-   return <></>;
 };
