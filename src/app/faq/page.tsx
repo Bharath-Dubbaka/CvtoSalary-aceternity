@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { HeroHighlightDemo } from "../components/ui/hero-highlight";
 import { Spotlight } from "../components/ui/Spotlight";
 import FaqItems from "./FaqItems";
+import { IconArrowLeft } from '@tabler/icons-react';
 
 const Faq = () => {
    const [showIndex, setShowIndex] = useState<number | null>(0);

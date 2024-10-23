@@ -1,5 +1,7 @@
 import { p } from "framer-motion/client";
 import React from "react";
+import { IconMinus, IconPlus } from "@tabler/icons-react";
+
 interface FaqItemProps {
    ques: string;
    ans: string;
@@ -23,7 +25,13 @@ const FaqItems: React.FC<FaqItemProps> = ({
             className="font-semibold flex justify-between  cursor-pointer"
          >
             <div className="my-1">{ques}</div>
-            <div className="my-1">{showItems ? "🔻" : "🟩"}</div>
+            <div className="my-1">
+               {showItems ? (
+                  <IconMinus color="yellow" />
+               ) : (
+                  <IconPlus color="blue" />
+               )}
+            </div>
          </div>
          <>
             {showItems ? (
