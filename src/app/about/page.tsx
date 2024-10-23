@@ -17,34 +17,37 @@ const About = () => {
             //    textAlign: "center",
             // }}
          >
-            <div className="pt-8 mx-8 sm:mx-36 md:mx-36">
-               <div className="text-3xl sm:text-4xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+            <div className="pt-8 mx-6 sm:mx-36 md:mx-36">
+               <div className="mb-4 text-3xl sm:text-4xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   About Our Team
                   {/* / <br /> Privacy policy. */}
                </div>
-               <p className=" text-center mb-6 mt-6"> 
-                  Our Team @CVtoSalary is made up of seasoned professionals who
-                  have considerable expertise working with candidates and hiring
-                  processes in India and North America. We provide a plethora of
-                  experience from working with Fortune 500 companies, notably in
-                  the IT and tech industries. We understand the regional hiring
-                  dynamics, industry-specific needs, and what recruiters from
-                  global and Fortune 500 organizations look for after
-                  successfully crafting resumes and optimizing LinkedIn profiles
-                  for people aspiring for top-tier roles in these locations.
-               </p>
-               <p className=" text-center mb-6">
-                  From entry-level IT employment to senior leadership positions,
-                  our team specializes in matching your personal brand with
-                  industry expectations, allowing you to stand out in a
-                  competitive global job market.
-               </p>
+               <div className="border border-gray-800 rounded-lg p-2 pt-6 sm:p-8 md:p-8 pb-1" >
+                  <p className=" text-center mb-6  ">
+                     Our Team @CVtoSalary is made up of seasoned professionals
+                     who have considerable expertise working with candidates and
+                     hiring processes in India and North America. We provide a
+                     plethora of experience from working with Fortune 500
+                     companies, notably in the IT and tech industries. We
+                     understand the regional hiring dynamics, industry-specific
+                     needs, and what recruiters from global and Fortune 500
+                     organizations look for after successfully crafting resumes
+                     and optimizing LinkedIn profiles for people aspiring for
+                     top-tier roles in these locations.
+                  </p>
+                  <p className=" text-center mb-6">
+                     From entry-level IT employment to senior leadership
+                     positions, our team specializes in matching your personal
+                     brand with industry expectations, allowing you to stand out
+                     in a competitive global job market.
+                  </p>
+               </div>
             </div>
 
             <hr className=" bg-white" />
-            <div className="mt-12 mx-8 sm:mx-36 md:mx-36">
+            <div className="mt-8 mx-6 sm:mx-36 md:mx-36 border border-slate-800 rounded-lg p-2 sm:p-8 md:p-8">
                <div className="text-2xl mb-4">Why CVToSalary ?</div>
-               <p className="mb-6">
+               <p className="mb-2">
                   <div>Our Expertise:</div>
                   At cvtosalary, we are committed to helping people land their
                   ideal jobs by creating distinctive resumes and optimizing
@@ -87,7 +90,7 @@ const About = () => {
                </p>
             </div>
             <hr />
-            <div className="mx-8 sm:mx-28 md:mx-28 mt-12 text-center ">
+            <div className="mx-8 sm:mx-28 md:mx-28 mt-6 sm:mt-12 md:mt-12 text-center ">
                <p>
                   ***At cvtosalary, we believe that the right combination of a
                   well-written resume and a strategically optimized LinkedIn
