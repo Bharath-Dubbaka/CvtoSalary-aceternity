@@ -14,7 +14,6 @@ const FaqItems: React.FC<FaqItemProps> = ({
    ans,
    showItems,
    setShow,
-   key,
 }) => {
    return (
       <div className="border border-gray-800 rounded-2xl p-4 mb-2 bg-slate-950">
